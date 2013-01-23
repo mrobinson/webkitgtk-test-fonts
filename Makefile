@@ -1,3 +1,4 @@
+VERSION=0.0.4
 default:
 
 install:
@@ -5,10 +6,10 @@ install:
 	cp -r *.ttf *.otf $(DESTDIR)$(JHBUILD_PREFIX)/webkitgtk-test-fonts
 
 dist:
-	mkdir webkitgtk-test-fonts-0.0.3
-	cp *.ttf *.otf Makefile webkitgtk-test-fonts-0.0.3
-	tar cvzf webkitgtk-test-fonts-0.0.3.tar.gz webkitgtk-test-fonts-0.0.3
-	rm -rf webkitgtk-test-fonts-0.0.3
+	mkdir webkitgtk-test-fonts-$(VERSION)
+	cp *.ttf *.otf Makefile webkitgtk-test-fonts-$(VERSION)
+	tar cvzf webkitgtk-test-fonts-$(VERSION).tar.gz webkitgtk-test-fonts-$(VERSION)
+	rm -rf webkitgtk-test-fonts-$(VERSION)
 
 clean:
 	@true
